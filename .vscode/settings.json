@@ -1,0 +1,32 @@
+{
+  "editor.formatOnSave": false,
+  "editor.formatOnPaste": false,
+  "vetur.validation.style": false,
+  "vetur.validation.script": false,
+  "javascript.format.enable": false,
+  "eslint.alwaysShowStatus": true,
+  "eslint.options": {
+    "extensions": [ ".html", ".js", ".vue", ".jsx" ]
+  },
+  "eslint.validate": [
+    { "language": "html", "autoFix": true },
+    { "language": "vue", "autoFix": true },
+    { "language": "scss", "autoFix": false },
+    { "language": "javascript", "autoFix": true },
+    { "language": "javascriptreact", "autoFix": true }
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "[scss]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": false
+    }
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "name": "backtobasic",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "local": "nuxt --hostname 0.0.0.0 --port 8080",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "release": "standard-version --no-verify -t ''",
+    "lint": "eslint --ext .js,.vue --ignore-path .eslintignore ."
+  },
+  "lint-staged": {
+    "*.{js,vue}": "yarn lint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "": ""
+    }
+  },
+  "standard-version": {
+    "skip": {
+      "tag": true
+    }
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.9.0",
+    "@nuxtjs/pwa": "^3.0.2",
+    "core-js": "^3.6.5",
+    "husky": "^4.3.0",
+    "node-sass": "^5.0.0",
+    "nuxt": "^2.14.6",
+    "sass-loader": "^10.1.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/tailwindcss": "^3.1.0",
+    "babel-eslint": "^10.1.0",
+    "body-scroll-lock": "^3.1.5",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.1.2",
+    "vue-observe-visibility": "^0.4.6"
+  }
+}

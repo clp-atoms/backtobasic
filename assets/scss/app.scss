@@ -1,0 +1,21 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@tailwind base;
+@tailwind components;
+
+// Tools
+@import "tools";
+
+@tailwind utilities;
+@import "animations";
+
+body {
+   @apply bg-black;
+}
+
+input{
+  @apply outline-none;
+}
