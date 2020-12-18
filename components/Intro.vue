@@ -10,6 +10,7 @@
         <div class="text-xl w-1/2 pl-5">
           Realizzare qualcosa di divertente ed educativo utilizzando i materiali
           e gli strumenti che normalmente si trovano in casa!
+          <div class="text-sm">(Clicca per iniziare)</div>
         </div>
       </div>
     </div>
