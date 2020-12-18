@@ -17,16 +17,20 @@
         @loadedmetadata="onLoadedmetadata"
       />
     </div>
+
+    <End />
   </div>
 </template>
 
 <script>
 import Intro from '@/components/Intro.vue'
 import Video from '@/components/Video.vue'
+import End from '@/components/End.vue'
 export default {
   components: {
     Intro,
     Video,
+    End,
   },
 
   data() {
