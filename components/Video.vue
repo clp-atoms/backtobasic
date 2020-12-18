@@ -8,7 +8,7 @@
       @loadedmetadata="onLoadedmetadata"
     ></video>
 
-    <div class="text-sm absolute bottom-0 right-0 z-20 bg-black text-white">
+    <div class="text-sm absolute bottom-0 right-0 z-20 bg-white text-black p-2">
       Scrolla per visualizzare l'intero procedimento
     </div>
   </div>
